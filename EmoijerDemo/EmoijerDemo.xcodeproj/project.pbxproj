@@ -19,19 +19,6 @@
 		7B96B9E71C3A75E9008FBBEA /* KCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B96B9E61C3A75E9008FBBEA /* KCTextView.m */; };
 		7B96B9E91C3A7858008FBBEA /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B96B9E81C3A7858008FBBEA /* SF-UI-Text-Light.otf */; };
 		7B96B9EC1C3A7B98008FBBEA /* ToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B96B9EB1C3A7B98008FBBEA /* ToolBarView.m */; };
-		7BE1B66E1C3E038C00085FEE /* KCEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B5F41C3E038C00085FEE /* KCEmojiModel.m */; };
-		7BE1B66F1C3E038C00085FEE /* KCLocalEmojiTotalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B5F61C3E038C00085FEE /* KCLocalEmojiTotalInfo.m */; };
-		7BE1B6701C3E038C00085FEE /* KCOnlineImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B5F81C3E038C00085FEE /* KCOnlineImageInfo.m */; };
-		7BE1B6711C3E038C00085FEE /* KCOnlinePropertyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B5FA1C3E038C00085FEE /* KCOnlinePropertyData.m */; };
-		7BE1B6721C3E038C00085FEE /* KCWordCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B5FC1C3E038C00085FEE /* KCWordCluster.m */; };
-		7BE1B6731C3E038C00085FEE /* t_property_data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1B5FD1C3E038C00085FEE /* t_property_data.sqlite */; };
-		7BE1B6741C3E038C00085FEE /* KCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6001C3E038C00085FEE /* KCCache.m */; };
-		7BE1B6751C3E038C00085FEE /* KCMessageAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6021C3E038C00085FEE /* KCMessageAnalyzer.m */; };
-		7BE1B6761C3E038C00085FEE /* KCPropertyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6041C3E038C00085FEE /* KCPropertyManager.m */; };
-		7BE1B6771C3E038C00085FEE /* KCRecentEmojisMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6061C3E038C00085FEE /* KCRecentEmojisMgr.m */; };
-		7BE1B6781C3E038C00085FEE /* KCTextAttahment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6081C3E038C00085FEE /* KCTextAttahment.m */; };
-		7BE1B6791C3E038C00085FEE /* KCTextTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B60A1C3E038C00085FEE /* KCTextTranslator.m */; };
-		7BE1B67A1C3E038C00085FEE /* NSString+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B60C1C3E038C00085FEE /* NSString+tools.m */; };
 		7BE1B67B1C3E038C00085FEE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6111C3E038C00085FEE /* AFHTTPRequestOperation.m */; };
 		7BE1B67C1C3E038C00085FEE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6131C3E038C00085FEE /* AFHTTPRequestOperationManager.m */; };
 		7BE1B67D1C3E038C00085FEE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1B6151C3E038C00085FEE /* AFHTTPSessionManager.m */; };
@@ -98,32 +85,6 @@
 		7B96B9E81C3A7858008FBBEA /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
 		7B96B9EA1C3A7B98008FBBEA /* ToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBarView.h; sourceTree = "<group>"; };
 		7B96B9EB1C3A7B98008FBBEA /* ToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBarView.m; sourceTree = "<group>"; };
-		7BE1B5F31C3E038C00085FEE /* KCEmojiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEmojiModel.h; sourceTree = "<group>"; };
-		7BE1B5F41C3E038C00085FEE /* KCEmojiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEmojiModel.m; sourceTree = "<group>"; };
-		7BE1B5F51C3E038C00085FEE /* KCLocalEmojiTotalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLocalEmojiTotalInfo.h; sourceTree = "<group>"; };
-		7BE1B5F61C3E038C00085FEE /* KCLocalEmojiTotalInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLocalEmojiTotalInfo.m; sourceTree = "<group>"; };
-		7BE1B5F71C3E038C00085FEE /* KCOnlineImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCOnlineImageInfo.h; sourceTree = "<group>"; };
-		7BE1B5F81C3E038C00085FEE /* KCOnlineImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOnlineImageInfo.m; sourceTree = "<group>"; };
-		7BE1B5F91C3E038C00085FEE /* KCOnlinePropertyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCOnlinePropertyData.h; sourceTree = "<group>"; };
-		7BE1B5FA1C3E038C00085FEE /* KCOnlinePropertyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOnlinePropertyData.m; sourceTree = "<group>"; };
-		7BE1B5FB1C3E038C00085FEE /* KCWordCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCWordCluster.h; sourceTree = "<group>"; };
-		7BE1B5FC1C3E038C00085FEE /* KCWordCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCWordCluster.m; sourceTree = "<group>"; };
-		7BE1B5FD1C3E038C00085FEE /* t_property_data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = t_property_data.sqlite; sourceTree = "<group>"; };
-		7BE1B5FF1C3E038C00085FEE /* KCCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCache.h; sourceTree = "<group>"; };
-		7BE1B6001C3E038C00085FEE /* KCCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCache.m; sourceTree = "<group>"; };
-		7BE1B6011C3E038C00085FEE /* KCMessageAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMessageAnalyzer.h; sourceTree = "<group>"; };
-		7BE1B6021C3E038C00085FEE /* KCMessageAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMessageAnalyzer.m; sourceTree = "<group>"; };
-		7BE1B6031C3E038C00085FEE /* KCPropertyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPropertyManager.h; sourceTree = "<group>"; };
-		7BE1B6041C3E038C00085FEE /* KCPropertyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPropertyManager.m; sourceTree = "<group>"; };
-		7BE1B6051C3E038C00085FEE /* KCRecentEmojisMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCRecentEmojisMgr.h; sourceTree = "<group>"; };
-		7BE1B6061C3E038C00085FEE /* KCRecentEmojisMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCRecentEmojisMgr.m; sourceTree = "<group>"; };
-		7BE1B6071C3E038C00085FEE /* KCTextAttahment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTextAttahment.h; sourceTree = "<group>"; };
-		7BE1B6081C3E038C00085FEE /* KCTextAttahment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTextAttahment.m; sourceTree = "<group>"; };
-		7BE1B6091C3E038C00085FEE /* KCTextTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTextTranslator.h; sourceTree = "<group>"; };
-		7BE1B60A1C3E038C00085FEE /* KCTextTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTextTranslator.m; sourceTree = "<group>"; };
-		7BE1B60B1C3E038C00085FEE /* NSString+tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+tools.h"; sourceTree = "<group>"; };
-		7BE1B60C1C3E038C00085FEE /* NSString+tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+tools.m"; sourceTree = "<group>"; };
-		7BE1B60D1C3E038C00085FEE /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		7BE1B6101C3E038C00085FEE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		7BE1B6111C3E038C00085FEE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		7BE1B6121C3E038C00085FEE /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -251,7 +212,6 @@
 		7B96B90D1C3A6C25008FBBEA /* EmoijerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1B5F11C3E038C00085FEE /* Emojier */,
 				7BE1B60E1C3E038C00085FEE /* Lib */,
 				7B96B9111C3A6C25008FBBEA /* AppDelegate.h */,
 				7B96B9121C3A6C25008FBBEA /* AppDelegate.m */,
@@ -280,55 +240,6 @@
 				7B96B90F1C3A6C25008FBBEA /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7BE1B5F11C3E038C00085FEE /* Emojier */ = {
-			isa = PBXGroup;
-			children = (
-				7BE1B5F21C3E038C00085FEE /* Model */,
-				7BE1B5FE1C3E038C00085FEE /* Utilitties */,
-			);
-			path = Emojier;
-			sourceTree = "<group>";
-		};
-		7BE1B5F21C3E038C00085FEE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7BE1B5F31C3E038C00085FEE /* KCEmojiModel.h */,
-				7BE1B5F41C3E038C00085FEE /* KCEmojiModel.m */,
-				7BE1B5F51C3E038C00085FEE /* KCLocalEmojiTotalInfo.h */,
-				7BE1B5F61C3E038C00085FEE /* KCLocalEmojiTotalInfo.m */,
-				7BE1B5F71C3E038C00085FEE /* KCOnlineImageInfo.h */,
-				7BE1B5F81C3E038C00085FEE /* KCOnlineImageInfo.m */,
-				7BE1B5F91C3E038C00085FEE /* KCOnlinePropertyData.h */,
-				7BE1B5FA1C3E038C00085FEE /* KCOnlinePropertyData.m */,
-				7BE1B5FB1C3E038C00085FEE /* KCWordCluster.h */,
-				7BE1B5FC1C3E038C00085FEE /* KCWordCluster.m */,
-				7BE1B5FD1C3E038C00085FEE /* t_property_data.sqlite */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7BE1B5FE1C3E038C00085FEE /* Utilitties */ = {
-			isa = PBXGroup;
-			children = (
-				7BE1B5FF1C3E038C00085FEE /* KCCache.h */,
-				7BE1B6001C3E038C00085FEE /* KCCache.m */,
-				7BE1B6011C3E038C00085FEE /* KCMessageAnalyzer.h */,
-				7BE1B6021C3E038C00085FEE /* KCMessageAnalyzer.m */,
-				7BE1B6031C3E038C00085FEE /* KCPropertyManager.h */,
-				7BE1B6041C3E038C00085FEE /* KCPropertyManager.m */,
-				7BE1B6051C3E038C00085FEE /* KCRecentEmojisMgr.h */,
-				7BE1B6061C3E038C00085FEE /* KCRecentEmojisMgr.m */,
-				7BE1B6071C3E038C00085FEE /* KCTextAttahment.h */,
-				7BE1B6081C3E038C00085FEE /* KCTextAttahment.m */,
-				7BE1B6091C3E038C00085FEE /* KCTextTranslator.h */,
-				7BE1B60A1C3E038C00085FEE /* KCTextTranslator.m */,
-				7BE1B60B1C3E038C00085FEE /* NSString+tools.h */,
-				7BE1B60C1C3E038C00085FEE /* NSString+tools.m */,
-				7BE1B60D1C3E038C00085FEE /* Singleton.h */,
-			);
-			path = Utilitties;
 			sourceTree = "<group>";
 		};
 		7BE1B60E1C3E038C00085FEE /* Lib */ = {
@@ -527,7 +438,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B96B9E91C3A7858008FBBEA /* SF-UI-Text-Light.otf in Resources */,
-				7BE1B6731C3E038C00085FEE /* t_property_data.sqlite in Resources */,
 				7B96B91E1C3A6C25008FBBEA /* LaunchScreen.storyboard in Resources */,
 				7B96B91B1C3A6C25008FBBEA /* Assets.xcassets in Resources */,
 				7B96B9191C3A6C25008FBBEA /* Main.storyboard in Resources */,
@@ -556,8 +466,6 @@
 				7BE1B69E1C3E038C00085FEE /* SDWebImagePrefetcher.m in Sources */,
 				7BE1B6981C3E038C00085FEE /* SDImageCache.m in Sources */,
 				7BE1B67B1C3E038C00085FEE /* AFHTTPRequestOperation.m in Sources */,
-				7BE1B6791C3E038C00085FEE /* KCTextTranslator.m in Sources */,
-				7BE1B6761C3E038C00085FEE /* KCPropertyManager.m in Sources */,
 				7BE1B69A1C3E038C00085FEE /* SDWebImageDecoder.m in Sources */,
 				7BE1B6921C3E038C00085FEE /* NSObject+MJKeyValue.m in Sources */,
 				7BE1B6A31C3E038C00085FEE /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -565,24 +473,18 @@
 				7BE1B6941C3E038C00085FEE /* NSString+MJExtension.m in Sources */,
 				7BE1B6911C3E038C00085FEE /* NSObject+MJCoding.m in Sources */,
 				7BE1B68A1C3E038C00085FEE /* MJDictionaryCache.m in Sources */,
-				7BE1B66E1C3E038C00085FEE /* KCEmojiModel.m in Sources */,
 				7BE1B6901C3E038C00085FEE /* NSObject+MJClass.m in Sources */,
 				7BE1B6A11C3E038C00085FEE /* UIImage+MultiFormat.m in Sources */,
 				7BE1B6961C3E038C00085FEE /* MKAnnotationView+WebCache.m in Sources */,
 				7B96B9161C3A6C25008FBBEA /* ViewController.m in Sources */,
 				7BE1B6951C3E038C00085FEE /* RegexKitLite.m in Sources */,
-				7BE1B6781C3E038C00085FEE /* KCTextAttahment.m in Sources */,
 				7BE1B6A01C3E038C00085FEE /* UIImage+GIF.m in Sources */,
 				7B96B9EC1C3A7B98008FBBEA /* ToolBarView.m in Sources */,
-				7BE1B6721C3E038C00085FEE /* KCWordCluster.m in Sources */,
 				7BE1B6A51C3E038C00085FEE /* UIView+WebCacheOperation.m in Sources */,
 				7BE1B6871C3E038C00085FEE /* FMDatabasePool.m in Sources */,
 				7BE1B69D1C3E038C00085FEE /* SDWebImageManager.m in Sources */,
 				7BE1B68B1C3E038C00085FEE /* MJExtensionConst.m in Sources */,
-				7BE1B6771C3E038C00085FEE /* KCRecentEmojisMgr.m in Sources */,
 				7BE1B67D1C3E038C00085FEE /* AFHTTPSessionManager.m in Sources */,
-				7BE1B6741C3E038C00085FEE /* KCCache.m in Sources */,
-				7BE1B6711C3E038C00085FEE /* KCOnlinePropertyData.m in Sources */,
 				7BE1B6801C3E038C00085FEE /* AFURLConnectionOperation.m in Sources */,
 				7BE1B6811C3E038C00085FEE /* AFURLRequestSerialization.m in Sources */,
 				7BE1B68D1C3E038C00085FEE /* MJProperty.m in Sources */,
@@ -590,18 +492,14 @@
 				7BE1B6931C3E038C00085FEE /* NSObject+MJProperty.m in Sources */,
 				7BE1B6821C3E038C00085FEE /* AFURLResponseSerialization.m in Sources */,
 				7BE1B68E1C3E038C00085FEE /* MJPropertyKey.m in Sources */,
-				7BE1B6701C3E038C00085FEE /* KCOnlineImageInfo.m in Sources */,
-				7BE1B67A1C3E038C00085FEE /* NSString+tools.m in Sources */,
 				7BE1B6971C3E038C00085FEE /* NSData+ImageContentType.m in Sources */,
 				7BE1B6881C3E038C00085FEE /* FMDatabaseQueue.m in Sources */,
 				7B96B9131C3A6C25008FBBEA /* AppDelegate.m in Sources */,
 				7BE1B69F1C3E038C00085FEE /* UIButton+WebCache.m in Sources */,
 				7B96B9101C3A6C25008FBBEA /* main.m in Sources */,
-				7BE1B66F1C3E038C00085FEE /* KCLocalEmojiTotalInfo.m in Sources */,
 				7BE1B69B1C3E038C00085FEE /* SDWebImageDownloader.m in Sources */,
 				7BE1B67E1C3E038C00085FEE /* AFNetworkReachabilityManager.m in Sources */,
 				7BE1B6891C3E038C00085FEE /* FMResultSet.m in Sources */,
-				7BE1B6751C3E038C00085FEE /* KCMessageAnalyzer.m in Sources */,
 				7BE1B6861C3E038C00085FEE /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
