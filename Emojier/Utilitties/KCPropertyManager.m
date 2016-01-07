@@ -28,6 +28,7 @@
 {
     NSMutableArray *_propertyRequestCacheArray;
     NSMutableDictionary *_dowloadKeywordDict;
+    long long _maxImageCacheSize;
 }
 @property (nonatomic, strong) FMDatabase *db;
 @property (nonatomic, strong) FMDatabaseQueue *queue;
@@ -102,7 +103,9 @@ singleM(PropertyMgr);
     }];
     _propertyRequestCacheArray = [NSMutableArray array];
     _dowloadKeywordDict = [NSMutableDictionary dictionary];
-        return self;
+    _maxImageCacheSize = 2 * 1000 * 1000;
+    
+    return self;
 }
 
 - (void)updateLocalHotWordTableWithDB:(FMDatabase *)db{
@@ -120,8 +123,6 @@ singleM(PropertyMgr);
     if (public == nil) {
         
         [mgr GET:LIST_URL parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-            
-            
                 NSNumber *time = responseObject[KiChatTime_Public];
                 NSMutableDictionary *newParams = [NSMutableDictionary dictionary];
             newParams[KiChatTime_Public] = time;
@@ -376,7 +377,6 @@ singleM(PropertyMgr);
             dispatch_group_leave(group);
             if (!tanslate) {
                 KCEmojiModel *recentEmoji = [KCEmojiModel emojiModelWithOnlineProperty:property];
-//                recentEmoji.comeFrom = SMComeFromEscape;
                 [finalRecentModelArray addObject:recentEmoji];
             }
         }
@@ -392,7 +392,6 @@ singleM(PropertyMgr);
                    BOOL createImageSuccess =  [data writeToFile:[imagePath stringByAppendingPathComponent:imageName] atomically:YES];
                     if (createImageSuccess) {
                         dispatch_group_leave(group);
-//                        NSLog(@"dispatch_group_leave--------fnishedfnished=====idx====%d",idx);
                     }
                     if (!tanslate) {
                         KCEmojiModel *recentEmoji = [KCEmojiModel emojiModelWithOnlineProperty:property];
@@ -407,7 +406,6 @@ singleM(PropertyMgr);
     
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-//        NSLog(@"------------nofify--------------------------nofify--------------");
         if (tanslate) {
             if (translateDone) {
                 translateDone(YES);
@@ -418,6 +416,9 @@ singleM(PropertyMgr);
             if (self.requestEmojiModelArrayBlk) {
                 self.requestEmojiModelArrayBlk(finalRecentModelArray);
             }
+            
+            // delete imageCache
+            [[KCPropertyManager sharePropertyMgr] clearImagesIfMoreThanmaxSize];
             return;
         }
     });
@@ -516,7 +517,7 @@ singleM(PropertyMgr);
             }
             
         } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-            NSLog(@"error++==============%@",error);
+            NSLog(@"error==============%@",error);
         }];
 
     }
@@ -618,8 +619,17 @@ singleM(PropertyMgr);
     
 
 }
-- (void)clearImagesIfMoreThan1M{
+
+- (void)setCacheImageMaxSize:(long long)maxSize{
     
+    if (maxSize < 500 * 1024) { // must > 500KB.
+        return;
+    }
+    _maxImageCacheSize = maxSize;
+}
+
+- (void)clearImagesIfMoreThanmaxSize{
+    if ([self imageCacheFileSize] <= _maxImageCacheSize) return;
     __block NSMutableArray * array = [NSMutableArray array];
     __block  NSMutableArray *imageNameArray = [NSMutableArray array];
     [self.queue inDatabase:^(FMDatabase *db) {
@@ -668,7 +678,7 @@ singleM(PropertyMgr);
     for (NSDictionary *dict in array) {
         NSString *imgName = [dict[@"imageName"] stringByAppendingString:@"@2x.png"];
         long long nowImageSize = [self imageCacheFileSize];
-        if (nowImageSize > 1000 * 10) {
+        if (nowImageSize > _maxImageCacheSize * 0.5) {
             if ([myfileMgr fileExistsAtPath:[ImageCachePath stringByAppendingPathComponent:imgName]]) {
                 [myfileMgr removeItemAtPath:[ImageCachePath stringByAppendingPathComponent:imgName] error:&error];
                 if (error) {

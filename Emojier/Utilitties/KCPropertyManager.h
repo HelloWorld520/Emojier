@@ -83,10 +83,11 @@ singleH(PropertyMgr);
 
 // clear all the image cache
 - (void)clearImageCache;
-// clear images if images size > 1M
-// some but not all images will be deleted
-// images will be sorted by last use time, the earlier used will be deleted until all images size < 1M
-- (void)clearImagesIfMoreThan1M;
+// Setting maxSize(Bytes) of image cache that you allow. And then KCPropertyManager will regularly clean up the cache for you. Default size is 2 * 1000 * 1000 (2M).
+// images will be sorted by last use time, the earlier used will be deleted until all images size < maxSize * 0.5
+- (void)setCacheImageMaxSize:(long long)maxSize;
+//
+- (void)clearImagesIfMoreThanmaxSize;
 // the image folder size that already cached
 - (long long)imageCacheFileSize;
 - (void)updateImageNameAndUseDateWithEmojiModel:(KCEmojiModel *)emoji;
