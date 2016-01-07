@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+
 #import "Singleton.h"
 @class KCEmojiModel;
 @interface KCTextTranslator : NSObject
