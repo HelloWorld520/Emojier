@@ -184,12 +184,12 @@ If you need to calculate the tableViewCell's height with the textLabel/textView 
 &emsp;&emsp;  @return textLabelSize 
 
 	+(CGSize)sizeWithContent:(NSString *)content withMessageID:(NSString *)messageID withAttributedStr:(NSAttributedString *)sourceAttS;
-#####46 Delete images if they taking up too much space
+#####4.6 Delete images if they taking up too much space
 &emsp;&emsp;There are two methods in `KCPropertyManager.h` you can call.    
 1)`- (void)clearImageCache;`    
 This method will clear all the images that have been cached in the sandbox.    
-2)`- (void)clearImagesIfMoreThanSize:(long long)maxSize;`    
-This method will clean image if all image size > maxSize(Bytes). Images will be sorted by last use time, the earlier used will be deleted until all images size <= maxSize * 0.5 .
+2)`- (void)setCacheImageMaxSize:(long long)maxSize`    
+Setting maxSize(Bytes) of image cache that you allow. And then KCPropertyManager will regularly clean up the cache for you. Default size is 2 * 1000 * 1000 (2M). Images will be sorted by last use time, the earlier used will be deleted until all images size < maxSize * 0.5.
     
 ## License
 
