@@ -13,7 +13,6 @@
 
 &emsp;&emsp;6) [SDWebImage](https://github.com/rs/SDWebImage)
 
-&emsp;&emsp;You can get all them from github.
 ####2.Add -fno-objc-arc for RegexKitLite in Xcode project
 
 &emsp;&emsp;1)`Your project`
