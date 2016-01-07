@@ -192,4 +192,6 @@ This method will clear all the images that have been cached in the sandbox.
 2)`- (void)clearImagesIfMoreThanSize:(long long)maxSize;`    
 This method will clean image if all image size > maxSize(Bytes). Images will be sorted by last use time, the earlier used will be deleted until all images size <= maxSize * 0.5 .
     
+## License
 
+Emojier is released under the Apache license. See LICENSE for details.
